@@ -10,4 +10,6 @@ docker build -t tldr/kibana .
 
 # Running
 
-TODO
+```
+docker run -d -p 5601:5601 -h kibana --name kibana -e ELASTICSEARCH_URL=http://localhost:9200 tldr/kibana
+```
